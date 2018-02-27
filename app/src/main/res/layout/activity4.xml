@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Today's Progress"
+        android:id="@+id/today"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        android:layout_below="@+id/today"
+        android:layout_marginTop="37dp"/>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/today"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view" />
+
+    <TextView
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Calories "
+        android:fontFamily="sans-serif-light"
+        android:textSize="28dp"
+        android:id="@+id/textcal"
+        android:layout_below="@+id/view"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp"
+        android:textColor="#535353" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Distance "
+        android:fontFamily="sans-serif-light"
+        android:id="@+id/textdist"
+        android:paddingLeft="10dp"
+        android:textSize="28dp"
+        android:layout_alignTop="@+id/textcal"
+        android:layout_toEndOf="@+id/stepstext"
+        android:textColor="#535353" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="STEPS"
+        android:fontFamily="sans-serif-medium"
+
+        android:textStyle="bold"
+        android:textColor="#313030"
+        android:textSize="30dp"
+        android:id="@+id/stepstext"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/textdist"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:textSize="40dp"
+        android:id="@+id/stepsresult"
+        android:layout_below="@+id/stepstext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estimated weight loss for the week:
+          (considering same result)"
+        android:textSize="18dp"
+        android:gravity="center_horizontal"
+        android:fontFamily="sans-serif-light"
+        android:id="@+id/esti"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/stepsresult"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentEnd="true"
+        android:textColor="#535353" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0 Kgs"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:id="@+id/weightloss"
+        android:layout_below="@+id/esti"
+        android:layout_alignStart="@+id/stepstext" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Creators:Bhavya Pandey,Shashank Sahoo,Abhishek Kumar"
+        android:textSize="12dp"
+        android:textAlignment="center"
+        android:ems="10"
+        android:id="@+id/editText4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:textSize="20dp"
+        android:id="@+id/calresult"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/textcal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/distanceresult"
+        android:layout_below="@+id/textdist"
+        android:textSize="20dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginRight="0dp"
+        android:layout_alignEnd="@+id/today" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to main page"
+        android:id="@+id/button2"
+        android:onClick="back"
+        android:layout_above="@+id/editText4"
+        android:layout_centerHorizontal="true"
+        android:background="#a8ffffff" />
+
+
+</RelativeLayout>

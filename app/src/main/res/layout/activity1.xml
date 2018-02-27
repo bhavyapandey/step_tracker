@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:baselineAligned="true"
+    android:clickable="true" >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg2"
+        android:scaleType="centerCrop"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:textColor="@android:color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:id="@+id/start"
+        android:onClick="pedo"
+        android:background="#1e8c39d0"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="weekly review"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:id="@+id/Week"
+        android:textColor="@android:color/white"
+        android:onClick="weekly"
+        android:background="#1e8c39d0"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="92dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Creators:Bhavya Pandey,Shashank Sahoo,Abhishek Kumar"
+        android:textSize="12dp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fitness tips"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:onClick="fit"
+        android:textColor="@android:color/white"
+        android:id="@+id/button"
+        android:background="#1e8c39d0"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/imageButton"
+        android:src="@drawable/musicplay"
+        android:layout_alignParentEnd="true"
+        android:onClick="music"
+        android:background="#1e8c39d0"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>

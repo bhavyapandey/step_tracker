@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:weightSum="1">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Creators:Bhavya Pandey,Shashank Sahoo,Abhishek Kumar"
+        android:textSize="12dp"
+        android:textAlignment="center"
+        android:ems="10"
+        android:id="@+id/editText4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Weekly Analysis"
+        android:fontFamily="sans-serif"
+        android:id="@+id/textView"
+        android:textAlignment="center"
+        android:textStyle=""
+        android:textSize="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentEnd="true" />
+
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:stretchColumns="4"
+        android:id="@+id/tableLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"></TableLayout>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="DAYS"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:padding="13dip" />
+            <TextView
+                android:text="CALORIES"
+                android:gravity="right"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:padding="13dip"/>
+            <TextView
+                android:text="STEPS"
+                android:gravity="right"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:padding="0dip"
+                android:id="@+id/mainsteps"/>
+            <TextView
+                android:text="DISTANCE"
+                android:gravity="right"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:padding="13dip"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Monday"
+                android:textColor="@android:color/black"
+                android:padding="13dip" />
+            <TextView
+                android:text="CALORIES"
+                android:gravity="right"
+                android:padding="13dip"
+                android:id="@+id/moncal"/>
+            <TextView
+                android:text="STEPS"
+                android:gravity="right"
+                android:padding="0dip"
+                android:id="@+id/monstep"/>
+            <TextView
+                android:text="DISTANCE"
+                android:gravity="right"
+                android:padding="13dip"
+                android:id="@+id/mondis"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Tuesday"
+                android:textColor="@android:color/black"
+                android:padding="13dip" />
+            <TextView
+                android:text="CALORIES"
+                android:gravity="right"
+                android:padding="13dip"
+                android:id="@+id/tuescal"/>
+            <TextView
+                android:text="STEPS"
+                android:gravity="right"
+                android:padding="0dip"
+                android:id="@+id/tuestep"/>
+            <TextView
+                android:text="DISTANCE"
+                android:gravity="right"
+                android:padding="13dip"
+                android:id="@+id/tuedis"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Wednesday"
+                android:textColor="@android:color/black"
+                android:padding="13dip" />
+            <TextView
+                android:text="CALORIES"
+                android:gravity="right"
+                android:padding="13dip"
+                android:id="@+id/wedcal"/>
+            <TextView
+                android:text="STEPS"
+                android:gravity="right"
+                android:padding="0dip"
+                android:id="@+id/wedstep"/>
+            <TextView
+                android:text="DISTANCE"
+                android:gravity="right"
+                android:padding="13dip"
+                android:id="@+id/weddis"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Thursday"
+                android:textColor="@android:color/black"
+                android:padding="13dip" />
+            <TextView
+                android:text="CALORIES"
+                android:gravity="right"
+                android:padding="13dip"
+                android:id="@+id/thurcal"/>
+            <TextView
+                android:text="STEPS"
+                android:gravity="right"
+                android:padding="0dip"
+                android:id="@+id/thurstep"/>
+            <TextView
+                android:text="DISTANCE"
+                android:gravity="right"
+                android:padding="13dip"
+                android:id="@+id/thurdis"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Friday"
+                android:textColor="@android:color/black"
+                android:padding="13dip" />
+            <TextView
+                android:text="CALORIES"
+                android:gravity="right"
+                android:padding="13dip"
+                android:id="@+id/frical"/>
+            <TextView
+                android:text="STEPS"
+                android:gravity="right"
+                android:padding="0dip"
+                android:id="@+id/fristep"/>
+            <TextView
+                android:text="DISTANCE"
+                android:gravity="right"
+                android:padding="13dip"
+                android:id="@+id/fridist"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Saturday"
+                android:textColor="@android:color/black"
+                android:padding="13dip" />
+            <TextView
+                android:text="CALORIES"
+                android:gravity="right"
+                android:padding="13dip"
+                android:id="@+id/satcal"/>
+            <TextView
+                android:text="STEPS"
+                android:gravity="right"
+                android:padding="0dip"
+                android:id="@+id/satstep"/>
+            <TextView
+                android:text="DISTANCE"
+                android:gravity="right"
+                android:padding="13dip"
+                android:id="@+id/satdis"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Sunday"
+                android:textColor="@android:color/black"
+                android:padding="13dip" />
+            <TextView
+                android:text="CALORIES"
+                android:gravity="right"
+                android:padding="13dip"
+                android:id="@+id/suncal"/>
+            <TextView
+                android:text="STEPS"
+                android:gravity="right"
+                android:padding="0dip"
+                android:id="@+id/sunstep"/>
+            <TextView
+                android:text="DISTANCE"
+                android:gravity="right"
+                android:padding="13dip"
+                android:id="@+id/sundis"/>
+        </TableRow>
+
+
+    </TableLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        android:layout_below="@+id/tableLayout"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Come back to check you progress every week!"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif-thin"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/editText4"
+        android:layout_marginBottom="10dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:gravity="center_horizontal"
+        android:fontFamily="sans-serif-condensed"
+        android:textAllCaps="true"
+        android:text="benefits of walking"
+        android:textStyle="bold"
+        android:id="@+id/textView"
+        android:textColor="#036f07" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        android:layout_below="@+id/today"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif"
+        android:text="Gentle, low-impact exercise that are easy, free and available to everyone."
+        android:id="@+id/textView1"
+        android:textColor="#4c4289"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:text="1.Walking strengthens your heart"
+        android:id="@+id/textView2"
+        android:textColor="#572b2b"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+
+        android:text="Reduce your risk of heart disease and stroke by walking regularly. It’s great cardio exercise, lowering levels of LDL (bad) cholesterol while increasing levels of HDL (good) cholesterol. The Stroke Association says that a brisk 30-minute walk every day helps to prevent and control the high blood pressure that causes strokes, reducing the risk by up to 27 percent."
+        android:id="@+id/textView3"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="#000000" />
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/dd" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:text="2. Walking lowers disease risk"
+        android:id="@+id/textView4"
+        android:textStyle="bold"
+        android:textColor="#572b2b"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="A regular walking habit slashes the risk of type 2 diabetes by around 60 percent, and you’re 20 percent less likely to develop cancer of the colon, breast or womb with an active hobby such as walking. "
+        android:id="@+id/textView5"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="#000000"/>
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ok" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:text="3. Walking helps you lose weight"
+        android:textStyle="bold"
+        android:id="@+id/textView6"
+        android:textColor="#572b2b"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="You’ll burn around 75 calories simply by walking at 2mph for 30 minutes. Up your speed to 3mph and it’s 99 calories, while 4mph is 150 calories (equivalent to three Jaffa cakes and a jam doughnut!). Work that short walk into your daily routine and you’ll shed the pounds in no time."
+        android:id="@+id/textView7"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="#000000"/>
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/rr" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:text="4. Walking prevents dementia"
+        android:id="@+id/textView8"
+        android:textStyle="bold"
+        android:textColor="#572b2b"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Older people who walk six miles or more per week are more likely to avoid brain shrinkage and preserve memory as the years pass. Since dementia affects one in 14 people over 65 and one in six over 80, we reckon that’s a pretty great idea.
+"       android:id="@+id/textView9"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="#000000"/>
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ww" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:text="5. Walking tones up legs, bums and tums"
+        android:id="@+id/textView10"
+        android:textStyle="bold"
+        android:textColor="#572b2b"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Give definition to calves, quads and hamstrings while lifting your glutes (bum muscles) with a good, regular walk. Add hill walking into the mix and it’s even more effective. Pay attention to your posture and you’ll also tone your abs and waist."
+        android:id="@+id/textView11"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="#000000"/>
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/qq" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:text="6. Walking boosts vitamin D"
+        android:id="@+id/textView12"
+        android:textColor="#572b2b"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="We all need to get outside more. Many people in the UK are vitamin D deficient, affecting important things like bone health and our immune systems. Walking is the perfect way to enjoy the outdoors while getting your vitamin D fix."
+        android:id="@+id/textView13"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="#000000"/>
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fat" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:text="7. Walking gives you energy"
+        android:id="@+id/textView14"
+        android:textColor="#572b2b"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="You’ll get more done with more energy, and a brisk walk is one of the best natural energisers around. It boosts circulation and increases oxygen supply to every cell in your body, helping you to feel more alert and alive. Try walking on your lunch break to achieve more in the afternoon."
+        android:id="@+id/textView15"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="#000000"/>
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ff" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:text="8. Walking makes you happy"
+        android:textStyle="bold"
+        android:id="@+id/textView16"
+        android:textColor="#572b2b"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="It’s true – exercise boosts your mood. Studies show that a brisk walk is just as effective as antidepressants in mild to moderate cases of depression, releasing feel-good endorphins while reducing stress and anxiety. So for positive mental health, walking’s an absolute must."
+        android:id="@+id/textView17"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="#000000"/>
+    <ImageView
+
+        android:layout_width="329dp"
+        android:layout_height="442dp"
+        android:src="@drawable/jj" />
+    <TextView
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Creators:Bhavya Pandey,Shashank Sahoo,Abhishek Kumar"
+        android:textSize="12dp"
+        android:textAlignment="center"
+        android:textColor="#040404"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollVie18w" />
+
+
+
+</LinearLayout>
+
+    </ScrollView>

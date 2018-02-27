@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:weightSum="1"
+    android:keepScreenOn="true">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="CALORIES   "
+        android:textAlignment="center"
+        android:id="@+id/cal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#841a1a" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="GOAL"
+        android:textSize="32dp"
+        android:textAlignment="center"
+        android:id="@+id/goal"
+        android:textColor="#841a1a"
+        android:layout_below="@+id/stepsTaken"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="8dp"
+        android:textAlignment="center"
+        android:id="@+id/calres"
+        android:textSize="32dp"
+        android:layout_below="@+id/cal"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="  "
+        android:textSize="32dp"
+        android:paddingTop="8dp"
+        android:textAlignment="center"
+        android:id="@+id/goalres"
+        android:layout_below="@+id/goal"
+        android:layout_alignParentEnd="true" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        android:layout_below="@+id/calres"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Steps Taken"
+        android:id="@+id/steps"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:layout_marginTop="29dp"
+        android:textColor="#841a1a"
+        android:layout_below="@+id/view2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:textSize="50dp"
+        android:id="@+id/stepsTaken"
+        android:layout_below="@+id/steps"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Reset"
+        android:fontFamily="sans-serif-light"
+        android:id="@+id/Weekly"
+        android:onClick="reset"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:layout_above="@+id/review"
+        android:layout_marginBottom="12dp"
+        android:layout_alignStart="@+id/review"
+        android:background="#74dbdbdb" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Creators:Bhavya Pandey,Shashank Sahoo,Abhishek Kumar"
+        android:textSize="12dp"
+        android:textAlignment="center"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/goalres" />
+
+    <Button
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:text="Back to main page"
+        android:onClick="back"
+        android:textSize="28dp"
+        android:id="@+id/review"
+        android:fontFamily="sans-serif-light"
+        android:background="#74dbdbdb"
+        android:layout_above="@+id/editText3"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="STOP"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:id="@+id/save"
+        android:onClick="save"
+        android:background="#74dbdbdb"
+        android:layout_alignTop="@+id/Weekly"
+        android:layout_alignEnd="@+id/review"
+        android:fontFamily="sans-serif-light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="  DISTANCE  "
+        android:fontFamily="sans-serif"
+        android:textAlignment="center"
+        android:id="@+id/Distance"
+        android:textColor="#841a1a"
+
+        android:layout_above="@+id/disres"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="8dp"
+        android:textSize="32dp"
+        android:textAlignment="center"
+        android:id="@+id/disres"
+        android:layout_alignBottom="@+id/view2"
+        android:layout_alignEnd="@+id/save"
+        android:layout_marginEnd="23dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:textSize="40dp"
+        android:id="@+id/textView3"
+        android:layout_marginTop="300dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view4" />
+    <View
+        android:layout_width="2dp"
+        android:layout_height="80dp"
+        android:background="#c0c0c0"
+        android:id="@+id/view3"
+        android:layout_alignBottom="@+id/view2"
+        android:layout_centerHorizontal="true" />
+    <View
+        android:layout_width="2dp"
+        android:layout_height="80dp"
+        android:background="#c0c0c0"
+        android:layout_alignBottom="@+id/view3"
+        android:layout_toEndOf="@+id/Distance" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:text="5000"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:id="@+id/editText"
+        android:layout_above="@+id/view4"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
